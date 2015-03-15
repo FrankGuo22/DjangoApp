@@ -1,0 +1,11 @@
+<p>You searched for: <strong>{{ query }}</strong></p>
+
+{% if name %}
+    <ul>
+        {% for i in name %}
+        <li>{{ i }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No name matched your search criteria.</p>
+{% endif %}
